@@ -40,7 +40,7 @@ class AccuWeatherParser(RMParser):
         if 'None' in str(self.params["LocationKey"]) and not 'None' in str(self.params["ZipCode"]):
             self.params["LocationKey"] = self.obtainLocationKey()
             
-        varApiUrl = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/locationKey=' + str(self.params["LocationKey"])
+        varApiUrl = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/' + str(self.params["LocationKey"])
         varApiParameterList = [("apikey", str(self.params["ApiKey"])), ("details", "true")]
 
         log.info('Getting data from {0}'.format(str(varApiUrl)))
