@@ -3,7 +3,7 @@
 # AccuWeather Network parser for RainMachine smart sprinkler controller
 #
 # Feed your personal weather station data from accuweather.com into your RainMachine
-# Requires an API key, zip code
+# Requires an API key, zip code / location key (acquired based on zip code)
 #
 # Author: gitzone83 (https://github.com/gitzone83)
 # 
@@ -11,8 +11,7 @@
 #   - first version using data from AccuWeather
 #
 # LICENSE: GNU General Public License v3.0
-# GitHub: https://github.com/WillCodeForCats/rainmachine-amweather
-#
+# GitHub: https://github.com/gitzone83/accuweather.rainmachine
 
 from RMParserFramework.rmParser import RMParser
 from RMUtilsFramework.rmLogging import log
