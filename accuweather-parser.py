@@ -2,7 +2,7 @@
 
 # AccuWeather Network parser for RainMachine smart sprinkler controller
 #
-# Feed your personal weather station data from accuweather.com into your RainMachine
+# Feed forecast weather data from www.accuweather.com into your RainMachine
 # Requires an API key, zip code / location key (acquired based on zip code)
 #
 # Author: gitzone83 (https://github.com/gitzone83)
@@ -114,7 +114,7 @@ class AccuWeatherParser(RMParser):
             log.info("Successful update from AccuWeather for location %s" % (str(self.params["LocationKey"])))
             return True
         else:
-            self.lastKnownError = "No Data From Station"
+            self.lastKnownError = "No Data From AccuWeather"
             log.error("Connected, but no data returned from AccuWeather for location %s" % (str(self.params["LocationKey"])))
             return
             
