@@ -5,7 +5,7 @@
 # Feed your personal weather station data from accuweather.com into your RainMachine
 # Requires an API key, zip code
 #
-# Author: Marek Hajduczenia (mxhaj79@gmail.com)
+# Author: gitzone83 (https://github.com/gitzone83)
 # 
 # 20210804:
 #   - first version using data from AccuWeather
